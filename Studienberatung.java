@@ -16,7 +16,13 @@ public class Studienberatung {
 			System.out.println("Hast du Fachabitur?");
 			antwort = scanner.next();
 			if(antwort.equalsIgnoreCase("J")){
-
+				System.out.println("Hast du eine Berufsausbildung?");
+				antwort = scanner.next();
+				if(antwort.equalsIgnoreCase("J")){
+					System.out.println("Du kannst ja später noch studieren");
+				} else if(antwort.equalsIgnoreCase("N")){
+					System.out.println("Besser noch studieren");
+				}
 			} else if(antwort.equalsIgnoreCase("N")){
 				System.out.println("Nicht studieren");
 			}
