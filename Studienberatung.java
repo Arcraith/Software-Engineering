@@ -7,7 +7,13 @@ public class Studienberatung {
 		if(antwort.equalsIgnoreCase("J")){
 
 		} else if(antwort.equalsIgnoreCase("N")){
-			
+			System.out.println("Hast du Fachabitur?");
+			antwort = scanner.next();
+			if(antwort.equalsIgnoreCase("J")){
+
+			} else if(antwort.equalsIgnoreCase("N")){
+				System.out.println("Nicht studieren");
+			}
 		}
 	}
 }
